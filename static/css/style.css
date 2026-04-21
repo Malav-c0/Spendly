@@ -169,9 +169,20 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero-actions {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     gap: 1rem;
     align-items: center;
+}
+
+.hero-buttons-row {
+    display: contents;
+}
+
+.btn-see-how {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-self: stretch;
 }
 
 /* ------------------------------------------------------------------ */
